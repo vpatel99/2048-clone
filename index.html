@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+  <script src="engine/game.js" type="module"></script>
+  <script src="controller.js" type="module"></script>
+  <script src="view.js" type="module"></script>
+  <script src="main.js" type="module"></script>
+</head>
+
+<body>
+  <div id="main">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <h1 id="title_page">Welcome to the (un)official 2048!</h1>
+    <h1 class="how">HOW TO PLAY: Use your arrow keys to move the tiles. Tiles with the same number merge into one when
+      they touch. Add them up to reach 2048!</h1>
+  </div>
+  <div id="root">
+    <div id="tiles"></div>
+
+    <div class="columns is-vcentered">
+      <div class="control">
+        <div class="column">
+          <div class="columns">
+            <div class="column">
+              <div id="score"></div>
+            </div>
+            <div class="column">
+              <div id="high">Your best: 0</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="column">
+          <button id ="reset" class="button is-info is-rounded">Reset</button>
+        </div>
+        <div class="column">
+          <h1 id="gameOver">Make your move! You haven't lost or won yet</h1>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+  </div>
+  <div class="container"></div>
+
+  <h1 class="how">Created by: Vivek Patel</h1>
+
+  </div>
+
+</body>
+
+</html>
